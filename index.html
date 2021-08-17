@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="https://use.fontawesome.com/cb7ef27c76.js"></script>
+
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header id="id_header">
+        <div class="center">
+            <span class="dots pointer"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+            <div class="logo"><img src="images/amex logo.png" height="30" alt="amex logo"></div>
+            <input id="id_bars" type="checkbox" class="openBar pointer">
+            <label for="id_bars"> 
+                <span class="open pointer"></span>
+            </label>        
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">why amex?</a></li>
+                    <li><a href="#">a card for all</a></li>
+                    <li><a href="#">reload your card</a></li>
+                    <li><a href="#">our offers</a></li>
+                    <li><a href="#">faq</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <!-- ==============PATR-1====================== -->
+    <main id="id_part1" class="part-1">
+        <!-- ==============Progresing bar====================== -->
+        <div class="progression-bar">
+            <ul>
+                <li class="thisP"> <span class="written"> amex card </span><span class="simbols"><i class="fi-rr-user"></i></span></li>
+                <li> <span class="written"> information </span><span class="simbols"><i class="fi-rr-marker"></i></span></li>
+                <li> <span class="written"> payment method </span><span class="simbols"><i class="fi-rr-lock"></i></span></li>
+            </ul>
+        </div>
+        <!--===========end of Progresing bar=========== -->
+        <!-- ==============PATR-1====================== -->
+        
+        
+        <section>
+            <div class="contain_left">
+                <div class="stick">
+                    <img class="platinum" src="images/platinum-card-metal_480x304.png" alt="platinum card metal">
+                    <img src="images/badge_price.png" alt="badge price">
+                </div>
+            </div>
+            <div class="contain_right">
+                <h1>PERSONAL DETAILS<p>&#8212;</p></h1>
+                <form action="get">
+                    <div class="title">
+                    <span class="littelSpaceR">Title</span>
+                    <input id="id_radio_mr" type="radio" name="title" >
+                        <label  class="littelSpaceR" for="id_radio_mr">
+                            Mr
+                        </label>
+                            
+                        
+                        <input id="id_radio_mis" type="radio" name="title" >
+                        <label for="id_radio_mis"  class="littelSpaceR">
+                            
+                            Mis
+                        </label>
+                        
+                        <input id="id_radio_corporate" type="radio" name="title" >
+                        <label for="id_radio_corporate" class="noMargin littelSpaceR">
+                            Corporate
+                        </label>
+                        
+                       
+                        <label for="id_radio_association" class="noMargin littelSpaceR">
+                            <input id="id_radio_association" type="radio" name="title" >
+                            Association
+                        </label>
+                    </div>
+                    
+                
+
+                    <label for="id_first_name" class="fullRow  fName">
+                        <p class="littelSpace">First Name</p>
+                        <input type="text" id="id_first_name">
+                    </label>
+
+                    <label for="id_last_name" class="fullRow  lName">
+                        <p class="littelSpace">Last Name</p>
+                        <input type="text" id="id_last_name">
+                    </label>
+
+                    <label for="id_custom" class="fullRow  custom">
+                        <p class="littelSpace">Custom Field</p>
+                        <input type="text" id="id_custom">
+                    </label>
+
+                    
+                    <div class="add fullRow">
+                        <p class="fullRow iban littelSpace">IBAN UK</p>
+                    <label for="id_uk">
+                        <input id="id_uk" type="radio" name="flag" >
+                        <span class="uk_span pointer"></span>
+                    </label>
+                    <label for="id_french">
+                        <input id="id_french" type="radio" name="flag" >
+                        <span class="french_span pointer"></span>
+                    </label>
+                    <wrapper class="fullRow">
+                        <span id="id_add_card" onclick="addNewCard()" class="pointer btn"> Add Card</span>
+                    </wrapper></div>
+
+                    <label id="id_label_custom2" for="id_custom2" class="fullRow oneCard custom2">
+                        <p class="littelSpace">Custom Field</p>
+                        <input type="text" id="id_custom2">
+                    </label>
+
+                    <div id="id_added" class="added fullRow pointer oneCard">
+                    <p class="fullRow iban littelSpace">IBAN UK</p>
+
+                    <label for="id_uk2">
+                        <input id="id_uk2" type="radio" name="flag2" >
+                        <span class="uk_span pointer"></span>
+                    </label>
+                    <label for="id_french2">
+                        <input id="id_french2" type="radio" name="flag2" ><span class=" pointer french_span"></span>
+                    </label>
+                    <wrapper class="fullRow">
+                        <span id="id_delete" onclick="deleteNewCard()" class="pointer btn ">Delete Card</span>
+                    </wrapper></div>
+
+
+                    <label class="fullRow date " for="id_date_of_birdh">
+                        Date Of Birth
+                        <input id="id_date_of_birdh"  class="littelSpaceUp" type="date">
+                        <p class="fullRow smallFont">(For example: 31/12/1970)</p>
+                    </label>
+                
+
+
+                    <label for="id_i_do" class="bySide">
+                        <p class="littelSpaceR"> I confirm that I have read and accepted the Legal Notice, General Terms and Conditions and Privacy Policy. </p>
+                        <input   id="id_i_do" type="checkbox" name="i-do" ><span class="noMargin pointer"></span>
+                    </label>
+
+
+                    
+                </form>
+            </div>
+        </section>
+        <div class="next">
+            <div  class="button pointer">
+                <a href="#id_part0">
+                    &#10094; Previous
+                </a>
+            </div>
+                <a id="continue" href="#id_part2" class="button continue">
+                    Continue &#10095;
+                </a>
+        </div>
+
+    </main>
+    
+    <!-- ==============PATR-2====================== -->
+    <main id="id_part2" class="part-2">
+        <!-- ==============Progresing bar====================== -->
+        <div class="progression-bar">
+            <ul>
+                <li class="thisP"> <span class="written"><span class="vi">&#10003;</span> 1. amex card </span><span class="simbols"><span class="vi">&#10003;</span><i class="fi-rr-user"></i></span></li>
+                <li class="thisP"> <span class="written">2. information </span><span class="simbols"><i class="fi-rr-marker"></i></span></li>
+                <li> <span class="written">3. payment method </span><span class="simbols"><i class="fi-rr-lock"></i></span></li>
+            </ul>
+        </div>
+        <!--===========end of Progresing bar=========== -->
+        <!-- ==============PATR-2====================== -->
+        
+        
+        <section>
+            <div class="contain_left">
+                <div class="stick">
+                    <img class="platinum" src="images/platinum-card-metal_480x304.png" alt="platinum card metal">
+                    <img src="images/badge_price.png"  alt="badge price">
+                </div>
+            </div>
+            <div class="contain_right">
+                <h1>MY DETAILS<p>&#8212;</p></h1>
+                <form action="#">                    
+                    <label for="id_email" class="full ">Email
+                        <input id="id_email"  name="email" type="email">
+                        <span class="smaller"> (To connect to your Customer Area) </span>
+                    </label>
+                    <label for="id_area" class="md-halfR">
+                        Area Code
+                        <select name="area_code" id="id_area">
+                            <option value="uk">+44 (United Kingdom)</option>
+                            <option value="fra">+33 (France)</option>
+                            <option value="isra">+972 (Israel)</option>
+                        </select>
+                    </label>
+                    <label for="id_phone_num" class="md-halfR">
+                        Phone Number
+                        <input id="id_phone_num"  type="text">
+                        <span class="smaller"> (To receive your PIN code) </span>
+                    </label>
+                    <h3 class="full in_right lineAbove">RESIDENTIAL ADDRESS</h3>
+                    <label for="id_search" class="full">
+                        <input id="id_search" type="text" placeholder="Search for an address" >
+                    </label>
+                    <label for="id_address" class="md-halfR">
+                        Address
+                        <input id="id_address" type="text">
+                    </label>
+                    <label for="id_address_details" class="md-halfR">
+                        Additional Address Details
+                        <input id="id_address_details" type="text">
+                    </label>
+                    <label for="id_city" class="md-thirdR">
+                        City
+                        <input id="id_city" type="text">
+                    </label>
+                    <label for="id_zip" class="md-thirdR">
+                        Zip Code
+                        <input id="id_zip" type="text">
+                    </label>
+                    <label for="id_country" class="md-thirdR">
+                        Country
+                        <select name="country" id="id_country">
+                            <option value="united_kingdom">United Kingdom</option>
+                            <option value="france">France</option>
+                            <option value="israel">Israel</option>
+                        </select>
+                    </label>
+                    <label class="line full checkbox" for="id_delivery">
+                        <input type="checkbox" class="pointer" name="delivery" id="id_delivery">
+                        <span> Delivery Address (if different)</span>
+                        <label for="id_search2" class="full del">
+                            <input id="id_search2" type="text" placeholder="Search for an address" >
+                        </label>
+                        <label class="del md-halfR" for="id_address_del">
+                            Address
+                            <input id="id_address_del" type="text">
+                        </label>
+                        <label class="del md-halfR" for="id_address_details_del">
+                            Additional Address Details
+                            <input id="id_address_details_del" type="text">
+                        </label>
+                        <label class="del md-thirdR" for="id_city_del">
+                            City
+                            <input id="id_city_del" type="text">
+                        </label>
+                        <label class="del md-thirdR" for="id_zip_del">
+                            Zip Code
+                            <input id="id_zip_del" type="text">
+                        </label>
+                        <label class="del md-thirdR" for="id_country_del">
+                            Country
+                            <select name="country_del" id="id_country_del">
+                                <option value="united_kingdom">United Kingdom</option>
+                                <option value="france">France</option>
+                                <option value="israel">Israel</option>
+                            </select>
+                        </label>
+                    </label>
+                    
+
+                    <label class="full lineAbove" for="id_question">
+                        Secret Question
+                        <select name="secret" id="id_question">
+                            <option value="mom">What is your mother's first name?</option>
+                            <option value="book">What is the name of your favorite book?</option>
+                            <option value="school">What is the name of your 1st school?</option>
+                        </select>
+                        
+                        <span class="smaller"> To help secure your card and your account </span>
+                        
+                    </label>
+                    <label class="full" for="id_answer">
+                        Answer
+                        <input id="id_answer" name="answer" type="text">
+                    </label>
+                    <label class="full" for="id_deposit">
+                        Card #1 First Deposit
+                        <select name="deposit" id="id_deposit">
+                            <option value="0">0 Eur</option>
+                            <option value="10">10 Eur</option>
+                            <option value="20">20 Eur</option>
+                        </select>
+                    </label>
+                    <label id="id_label_sec" class="full oneCard" for="id_deposit_sec">
+                        Card #2 First Deposit
+                        <select name="depositSec" id="id_deposit_sec">
+                            <option value="0">0 Eur</option>
+                            <option value="10">10 Eur</option>
+                            <option value="20">20 Eur</option>
+                        </select>
+                    </label>
+                    
+                        <p class="nineP">
+                            By clicking on VALIDATE i acknowledge that my AMEX card is a customized product and accept its immediate production from the approval of my order and, as such, expressly renounce to exercise my right to cancel my order pursuant to the provisions of article L.121-21-8 of the consumer code
+                        </p>
+                    
+                    <label class="bySide" for="id_i_will">
+                        <p class="littelSpaceR"> I would like to receive exclusive offers from AMEX Card </p>
+                        <input  type="checkbox" name="i_will" id="id_i_will"><span class="pointer"></span>
+                    </label>
+                    
+
+            </form>            
+        </div>
+        </section>
+        <div class="next">
+            <div  class="button pointer">
+                <a href="#id_part1">
+                    &#10094; Previous
+                </a>
+            </div>
+                <a href="#id_part3" id="continue" class="button continue" >
+                    Continue &#10095;
+                </a>
+        </div>
+    
+    </main>
+
+
+    <!-- ==============PATR-3====================== -->
+    <main id="id_part3" class="part-3">
+        <!-- ==============Progresing bar====================== -->
+        <div class="progression-bar">
+            <ul>
+                <li class="thisP"> <span class="written"><span class="vi">&#10003;</span> 1. amex card </span><span class="simbols"><span class="vi">&#10003;</span><i class="fi-rr-user"></i></span></li>
+                <li class="thisP"> <span class="written"><span class="vi">&#10003;</span> 2. information </span><span class="simbols"><span class="vi">&#10003;</span><i class="fi-rr-marker"></i></span></li>
+                <li class="thisP"> <span class="written">3. payment method </span><span class="simbols"><i class="fi-rr-lock"></i></span></li>
+            </ul>
+        </div>
+        <!--===========end of Progresing bar=========== -->
+        <!-- ==============PATR-3====================== -->
+
+        <section>
+            <h1>Payment mode<p>&#8212;</p></h1>
+            <div class="contain_left">
+                <div class="coverCards">
+                    <img src="images/platinum-card-metal_480x304.png" width="70%" alt="">
+                </div>
+                <div class="coverCards sec2">
+                    <img src="images/platinum-card-metal_480x304.png" width="70%" alt="">
+                </div>
+                   
+                
+                <div class="grayDay">
+                    <span id="id_one_or_two" class="number">1</span>
+
+                    <div class="topR">
+                        <p class="priority">Priority <br> Mail</p>
+                        <p class="bigT">T</p>
+                        <p class="smallM">M 20 g</p>
+                    </div>
+                    <div class="grayCenter">
+                        <ul>
+                            <li>John Doe</li>
+                            <li>22 London Road</li>
+                            <li>London, SE1 6JW</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="grayDay">
+                    <div class="gutter ">
+                        <span class="viList">&#10003;</span>
+                        <ul>
+                            <li>&#10003; Card type: AMEX International</li>
+                            <li>&#10003; Currency: EUR</li>
+                            <li>&#10003; IBAN: UK</li>
+                        </ul>
+                    </div>
+                    <div class="gutter bill">
+                        <span class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <p >1 X card (annual fees) <span class="toR" >29.90&euro;</span></p>
+                        <p ><i class="fa fa-trash-o" aria-hidden="true"></i>First deposit <span class="toR">10.00&euro;</span></p>
+                        <p ><i class="fa fa-trash-o" aria-hidden="true"></i>1 X card (annual fees) <span class="toR" >29.90&euro;</span></p>
+                    </div>
+                    <div class=" noColor">
+                        <form action="#">
+                            <label for="id_coupon">
+                                coupon <span>(optional)</span>
+                            </label>
+                            <input id="id_coupon" type="text" placeholder="Write the coupon here...">
+                            <input class="pointer" type="submit" value="Validate">
+                        </form>
+                    </div>
+                    <div>
+                        <div class="total">
+                            <p>Total &#10095; <span >  39.90&euro;</span></p>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <h2>Select your payment method</h2>
+            <div class="contain_right">
+                <div class="flexy">
+                    <div class="boxer">
+                        <div class="visa"><img src="images/visa-card.png" alt="visa card"></div>
+                        <div class="gutter ">VISA Card</div>
+                        <div class="securePay">
+                            <p>100% Secure Payment</p>
+                            <img src="images\ssl-order-card-pill.png" alt="ssl order card pill">
+                        </div>
+                    </div>
+                    <div class="boxer">
+                        <div class="visa"><img src="images/master-american-dinners-card.png" alt="master american dinners card"></div>
+                        <div class="gutter ">Mastercard</div>
+                        <div class="securePay">
+                            <p>100% Secure Payment</p>
+                            <img src="images\ssl-order-card-pill.png" alt="ssl order card pill">
+                        </div>
+                    </div>
+                    <div class="boxer faded">
+                        <div class="visa"><img src="images/paypal-card.png" alt="paypal card"></div>
+                        <div class="gutter ">Pay Pal</div>
+                        <div class="securePay">
+                            <p>100% Secure Payment</p>
+                            <img src="images\ssl-order-card-pill.png" alt="ssl order card pill">
+                        </div>
+                    </div>
+                    <div class="boxer">
+                        <div class="visa"><img src="images/neosurf-coupons.png" alt="neosurf coupons"></div>
+                        <div class="gutter ">Neosurf</div>
+                        <div class="securePay">
+                            <p>100% Secure Payment</p>
+                            <img src="images\ssl-order-card-pill.png" alt="ssl order card pill">
+                        </div>
+                    </div>
+                    <div class="boxer">
+                        <div class="visa"><img src="images/poste.png" alt="poste"></div>
+                        <div class="gutter ">Mandat (MVC)</div>
+                        <div class="securePay hide">
+                            <p>100% Secure Payment</p>
+                            <img src="images\ssl-order-card-pill.png" alt="ssl order card pill">
+                        </div>
+                    </div>
+                    <div class="boxer">
+                        <div class="visa"><img src="images/virement.png" alt="virement"></div>
+                        <div class="gutter ">Transfer</div>
+                        <div class="securePay hide">
+                            <p>100% Secure Payment</p>
+                            <img src="images\ssl-order-card-pill.png" alt="ssl order card pill">
+                        </div>
+                    </div>
+                    <div class="boxer faded">
+                        <div class="visa"><img src="images/bitcoin.png" alt="bitcoin"></div>
+                        <div class="gutter ">Bitcoin</div>
+                        <div class="securePay">
+                            <p>100% Secure Payment</p>
+                            <img src="images\ssl-order-card-pill.png" alt="ssl order card pill">
+                        </div>
+                    </div>
+                </div>
+                <div class="ssl">
+                    <img src="images/ssl-order-card.png" alt="ssl order card">
+                    <p>Secure Payment Option - SSL</p>
+                </div>
+            </div>
+            <div class="next">
+                <div  class="pointer button">
+                    <a href="#id_part2">
+                        &#10094; Previous
+                    </a>
+                </div>
+                   
+            </div>
+        </section>
+    
+
+
+</main>
+        <!-- ==============PATR-0====================== -->
+        <main id="id_part0" class="part-0">
+            <section>
+                <img src="images/select_card_intro.jpg" alt="select_card_intro">
+                <h1>Choose Your <span>Card</span></h1>
+                <p>&#8212;</p>
+            </section>
+            <section class="cards">
+                <div>
+                    <a href="#id_part1"><img  src="images/platinum-card-metal_480x304.png" alt="platinum card metal"></a>
+                    <h2>Basic&#10095;</h2>
+                    <ul>
+                        <li>No documents to provide</li>
+                        <li>Withdrawal up to €100 per day</li>
+                        <li>Embossed and Customizable Card</li>
+                        <li>IBAN/RIB included</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#id_part1"><img src="images/amex gold.jpg" alt="amex gold card"></a>
+                    <h2>Classic&#10095;</h2>
+                    <ul>
+                        <li>Individual or society</li>
+                        <li>Access to Special Offers</li>
+                        <li>Balance up to €10.000</li>
+                        <li>Reloading up to €15.000/month</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#id_part1"><img src="images/amex blue.jpg" alt="amex metal blue card"></a>
+                    <h2>VIP &#10095;</h2>
+                    <ul>
+                        <li>Individual or society</li>
+                        <li>Access to Special Offers</li>
+                        <li>Balance up to €25.000</li>
+                        <li>Reloading up to €50.000/month</li>
+                    </ul>
+                </div>
+            </section>
+            <p class="note">Note: Depending on your country of residence, local recharge limits may apply to your card.</p>
+        </main>
+    
+
+<!-- =====================FOOTER=================== -->
+    <footer>
+        <div class="lion">
+            <container>
+                <img src="images/lion.png" width="50" alt="lion">
+                <p>746,016 <span class="backBlue"> subscribers trust us.</span> </p>
+            </container>
+            <p> At your service for  <span class="numF" >9</span> YEARS <span style="font-family: Lucida Handwriting; ">and  </span> <span class="numF"> 332</span> Days</p>
+        </div>
+        <div>
+            <h3>AMEX at your service</h3>
+            <p>Customer Service in English at your service by <span id="id_phone">phone</span> from Monday to <br> <span class="bold">
+                 Saturday from 9h to 18h30</span></p>
+        </div>
+        <div class="trust">
+            <div class="wrap">
+                <img src="images/trust-us.png" width="100%" alt="trust us image">
+            </div>
+        </div>
+    </footer>
+    <a class="up" href="#id_header"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</body>
+</html>
