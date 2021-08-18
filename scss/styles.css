@@ -546,7 +546,8 @@ input#id_i_do:checked + span::before {
 }
 
 .smallFont {
-  font-size: 0.75em;
+  font-size: 0.85em;
+  margin-top: 5px;
 }
 
 .part-2 .progression-bar > ul {
@@ -724,9 +725,6 @@ input#id_i_will:checked + span::before {
   background-image: linear-gradient(135deg, #699fcd 33%, #89b9e2 33% 67%, #f5bf2f 67%);
 }
 
-.part-3 section {
-  margin-top: 50px;
-}
 
 .part-3 section h1 {
   text-align: center;
@@ -884,7 +882,7 @@ input#id_i_will:checked + span::before {
 
 .part-3 section .grayDay .bill {
   font-size: .75em;
-  text-align: center;
+  text-align: start;
   position: relative;
 }
 
