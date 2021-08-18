@@ -386,6 +386,7 @@ input#id_i_do:checked+span::before{
 }
 .smallFont{
 	font-size: 0.75em;
+	margin-top: 5px;
 }
 
 
@@ -522,7 +523,7 @@ background-size: 33px 23px;
 			135deg, #699fcd 33%, #89b9e2 33% 67%, #f5bf2f 67% );	
 	}
 		section{
-			margin-top: 50px;
+			
 			h1{
 				text-align: center;
 				font-size: 1.5em;
@@ -649,7 +650,7 @@ background-size: 33px 23px;
 
 				.bill{
 					font-size: .75em;
-					text-align: center;
+					text-align: start;
 					position: relative;
 					.fa-trash-o{
 						color: #f00;
